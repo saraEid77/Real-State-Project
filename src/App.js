@@ -9,7 +9,9 @@ import Navigation from './components/Navigation';
 import home from './components/Home';
 import signIn from './components/signIn';
 import join from './components/join';
+import 'bootstrap/dist/css/bootstrap.css';
 AOS.init();
+
 
 
 function App() {
