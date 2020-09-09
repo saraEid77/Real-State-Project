@@ -43,9 +43,6 @@ const footer = () => {
                 </ul>
                 </Col>
             </Row>
-            <Row>
-                <h6>I'm Here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h6>
-            </Row>
             </Container>
         </div>
     )
