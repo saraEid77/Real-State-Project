@@ -122,10 +122,10 @@ h3{
   display: none !important;
 }
 .section1 .carousel-control-next-icon{
-       background-image: url('../src/assets/images/271220.svg'); 
+       background-image: url('../src/assets/images/271228.svg'); 
 }
 .section1 .carousel-control-prev-icon{
-  background-image: url('../src/assets/images/271228.svg'); 
+  background-image: url('../src/assets/images/271220.svg'); 
 }
 @media only screen and (max-width: 600px) {
   .section1 .carousel-caption{
