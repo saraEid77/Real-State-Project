@@ -127,7 +127,7 @@ h3{
 .section1 .carousel-control-prev-icon{
   background-image: url('../src/assets/images/271220.svg'); 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .section1 .carousel-caption{
     display: none !important;
 }
