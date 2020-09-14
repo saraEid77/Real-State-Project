@@ -16,7 +16,7 @@ const section4 = () => {
                         <div className="text-white " style={{paddingTop:"80px",textAlign:"center"}}  >
                             <h1 >How It Works</h1>
                             <p>An overview of how work happens on Upwork.</p>
-                            <Button variant="primary">Get Started</Button>
+                            <Button className="mb-5" variant="primary">Get Started</Button>
                         </div> 
                     {/* </div> */}
       </div>

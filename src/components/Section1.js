@@ -25,14 +25,14 @@ const section1 = () => {
                 <div className="rightSection"> 
                 <Row >
                     <Col className="stars" >
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" src={star}></img>
-                    <h6 className="mt-1">Sara Eid</h6>
-                  
+                    <img className="star"  src={star}></img>
+                    <img className="star"  src={star}></img>
+                    <img className="star"  src={star}></img>
+                    <img className="star"  src={star}></img>
+                    <img className="star "   src={star}></img>  
+                    <h6 className="mt-1 stars-Title" >Sara Eid</h6>
                     </Col>
+                    
                   </Row>
                   <div className="caruselBackground  ">
                   <img style={{float:"right" ,paddingRight:"10%"}}
@@ -57,12 +57,12 @@ const section1 = () => {
                 <div> 
                 <Row >
                     <Col className="stars" >
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" src={star}></img>
-                    <h6 className="mt-1">Sara Eid</h6>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star "  src={star}></img>
+                    <h6 className="mt-1 stars-Title">Sara Eid</h6>
                   
                     </Col>
                   </Row>
@@ -89,12 +89,12 @@ const section1 = () => {
                 <div>
                 <Row >
                     <Col className="stars" >
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" style={{ float:"left"}} src={star}></img>
-                    <img classNam="star" src={star}></img>
-                    <h6 className="mt-1">Sara Eid</h6>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star"  src={star}></img>
+                    <img classNam="star "   src={star}></img>
+                    <h6 className="mt-1 stars-Title">Sara Eid</h6>
                   
                     </Col>
                   </Row>

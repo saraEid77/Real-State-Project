@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Form, FormControl, Button, NavItem ,Container} from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button, NavItem ,Container , Row, Col} from 'react-bootstrap';
 import { Switch, Route, Link,NavLink} from 'react-router-dom';
 import home from './Home'
 
@@ -16,30 +16,30 @@ export default class Navigation extends Component {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse  id="responsive-navbar-nav">
               <Nav className="ml-auto" >
-                {/* <NavItem eventkey={1} href="/"> */}
-                  {/* <Nav.Link exact activeClassName="active" as={Link} to="/" >Home</Nav.Link> */}
-                  <NavLink exact to="/"
-                    activeStyle={{
-                      fontWeight:"bold",
-                      color: "#035798"
-                    }}>home</NavLink>
-                {/* </NavItem> */}
-                {/* <NavItem eventkey={2} href="/signIn"> */}
-                  {/* <Nav.Link exact activeClassName="active" as={Link} to="/signIn" >Sign In </Nav.Link> */}
-                  <NavLink exact to="signIn"
-                    activeStyle={{
-                      fontWeight:"bold",
-                      color: "#035798"
-                    }}>Sign In</NavLink>
-                {/* </NavItem>
-                <NavItem eventkey={3} href="/join"> */}
-                  {/* <Nav.Link exact activeClassName="active" as={Link} to="/join" >Join</Nav.Link> */}
-                  <NavLink exact to="join"
-                    activeStyle={{
-                      fontWeight:"bold",
-                      color: "#035798"
-                    }}>Join</NavLink>
-                {/* </NavItem> */}
+                <Row>
+                  <Col xs={12}  md={3}>
+                    <NavLink exact to="/"
+                      activeStyle={{
+                        fontWeight:"bold",
+                        color: "#035798"
+                      }}>home</NavLink>
+                   </Col>
+                   <Col xs={12}  md={5}>
+                      <NavLink exact to="signIn"
+                        activeStyle={{
+                          fontWeight:"bold",
+                          color: "#035798"
+                        }}>Sign In</NavLink>
+                    </Col>
+                    <Col xs={12} md={3} >
+                      <NavLink exact to="join"
+                        // style={{ position:"absolute" , left:"-36px"}}
+                        activeStyle={{
+                          fontWeight:"bold",
+                          color: "#035798"
+                        }}>Join</NavLink>
+                    </Col>
+                 </Row>
               </Nav>
               <Form inline>  
                 <Button variant="primary">Post Project</Button>

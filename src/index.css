@@ -41,6 +41,9 @@ h3{
   color:#000
 }
 /* start navbar  */
+.navbar-nav{
+  text-align: center;
+}
 .bigNavbar{
   border-bottom:1px solid #D7D7D7;
 }
@@ -97,15 +100,29 @@ h3{
   left:36%;
   height: 100%;
 }
+@media only screen and (max-width: 600px) {
+  .section1 .caruselBackground{
+    position: relative;
+    margin-right: 1%;
+    width: 370px;
+}
+}
+
 .section1 .stars {
   position: absolute;
   left: 63%;
-  top: 80%;
+  top: 74%;
   z-index: 999;
 }
 .section1 .caruselBackground .stars .star{
+  float: left;
    position: absolute;
     right: 250px;
+}
+.section1  .stars-Title{
+  position: absolute !important;
+    left: 16px !important;
+    top: 22px !important;
 }
 .carousel-caption{
   position: absolute;
@@ -145,9 +162,11 @@ h3{
  margin-top: -5%;
 }
 .section2 .leftSide  img{
+  width:90%;
   height: 323px;
   margin-top: 25px;
  }
+ 
 .section2 .leftSide::after{
   content: '';
   height: 50%;
@@ -212,6 +231,13 @@ h3{
 }
 .section5 .tab-item-wrapper h1{
   margin-bottom: 30px;
+  
+}
+@media only screen and (max-width: 600px) {
+  .section5 .tab-item-wrapper h1{
+    margin-top: 70px;
+    
+  }
 }
 .section5 .bottomSection{
   margin-top: 50px;
@@ -225,6 +251,7 @@ h3{
 @media only screen and (max-width: 600px) {
   .section5 .innerTabb{
     margin-left: -10%;
+    margin-top: 50px;
   }
 }
 .section5 li{
@@ -244,12 +271,7 @@ h3{
 
 /* editing in bootstrap classes  */
 
- /* .nav-tabs {
-  border-bottom: 1px solid transparent !important;
-  position: absolute;
-  top:-42px;
-  background-color: #f1f1f1 !important;
-} */
+
 .tab-content{
   padding-top: 50px !important;
  

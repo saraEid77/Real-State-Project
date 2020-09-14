@@ -25,7 +25,7 @@ const footer = () => {
                         <img  className="mr-3"src={pinterest}></img>
                     </Row>
                 </Col>
-                <Col md={4} className="pl-5 ">
+                <Col md={4} >
                 <ul style={{listStyle:"none",lineHeight:"2"}}>
                     <li ><a  className="font-weight-bold" >About</a></li>
                     <li ><a href="#">Privacy Policy</a></li>
@@ -33,7 +33,7 @@ const footer = () => {
                     <li ><a href="#">Intellectual Property Claims</a></li>
                 </ul>
                 </Col>
-                <Col md={4} className="pl-5 ">
+                <Col md={4}  >
                 <ul style={{listStyle:"none",lineHeight:"2"}}>
                     <li ><a className="font-weight-bold" >Support</a></li>
                     <li ><a href="#">How it works?</a></li>
