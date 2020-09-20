@@ -33,7 +33,7 @@ const section5 = () => {
                                    <Col md={6} data-aos="fade-down"
                                                data-aos-easing="linear"
                                                data-aos-duration="1500">
-                                      <img src={photo1} style={{width:"280px"  ,marginLeft: "auto",  marginRight: "auto" }}></img>
+                                      <img src={photo1} ></img>
                                    </Col>
                                 </Row>
                             </div>
@@ -62,7 +62,7 @@ const section5 = () => {
                                    <Col md={6} data-aos="fade-down"
                                             data-aos-easing="linear"
                                             data-aos-duration="1500">
-                                      <img src={photo2} style={{width:"280px"  ,marginLeft: "auto",  marginRight: "auto" }}></img>
+                                      <img src={photo2} ></img>
                                    </Col>
                                 </Row>
                             </div>

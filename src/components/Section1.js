@@ -25,12 +25,12 @@ const section1 = () => {
                 <div className="rightSection"> 
                 <Row >
                     <Col className="stars" >
-                    <img className="star"  src={star}></img>
-                    <img className="star"  src={star}></img>
-                    <img className="star"  src={star}></img>
-                    <img className="star"  src={star}></img>
-                    <img className="star "   src={star}></img>  
-                    <h6 className="mt-1 stars-Title" >Sara Eid</h6>
+                      <img className="star"    src={star}></img>
+                      <img className="star"  src={star}></img>
+                      <img className="star"  src={star}></img>
+                      <img className="star"  src={star}></img>
+                      <img className="star "   src={star}></img>  
+                      <h6 className="mt-1 stars-Title" >Sara Eid</h6>
                     </Col>
                     
                   </Row>
