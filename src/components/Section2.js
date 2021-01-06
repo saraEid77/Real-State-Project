@@ -2,7 +2,7 @@ import React from 'react';
 import { Row , Col, Container, Dropdown ,Button} from 'react-bootstrap';
 
 
-const section2 = () => {
+const Section2 = () => {
     return (
       <Container className="section2 py-5">
         <div className="sale"> Sale</div>
@@ -120,5 +120,5 @@ const section2 = () => {
     )
 }
 
-export default section2
+export default Section2
 

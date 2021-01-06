@@ -2,7 +2,7 @@ import React from 'react'
 import {  Container } from 'react-bootstrap';
 import {FaHeart } from 'react-icons/fa';
 
-const footer = () => {
+const Footer = () => {
     return (
         <div className="footer text-center pt-5 pb-3" style={{backgroundColor:"#D7D7D7" }}>
             <Container >
@@ -15,4 +15,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default Footer

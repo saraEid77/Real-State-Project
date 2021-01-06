@@ -4,7 +4,7 @@ import background1 from '../assets/images/back2.jpg';
 import background2 from '../assets/images/back3.jpg';
 import background3 from '../assets/images/back2.jpg';
 
-const section1 = () => {
+const Section1 = () => {
 
     return (
         <div className="section1">
@@ -65,4 +65,4 @@ const section1 = () => {
     )
 }
 
-export default section1
+export default Section1
