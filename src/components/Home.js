@@ -9,7 +9,7 @@ import Section7 from './Section7';
 import Section8 from './Section8';
 import Footer from './Footer'
 
-const home = () => {
+const Home = () => {
     return (
         <div>
             
@@ -27,4 +27,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home
