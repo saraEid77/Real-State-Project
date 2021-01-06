@@ -1,116 +1,66 @@
 import React from 'react';
-import { Button ,Badge ,Carousel ,Row , Col} from 'react-bootstrap';
-import woman from '../assets/images/woman.png';
-import woman2 from '../assets/images/photo-1.png';
-import man from '../assets/images/photo.png';
-import star from '../assets/images/Path1901.svg';
-import rightArrow from '../assets/images/271228.svg'
-
+import { Button ,Carousel } from 'react-bootstrap';
+import background1 from '../assets/images/back2.jpg';
+import background2 from '../assets/images/back3.jpg';
+import background3 from '../assets/images/back2.jpg';
 
 const section1 = () => {
 
     return (
-        <div className=" bg-white section1">
+        <div className="section1">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={background1}
+                alt="First slide"
+              />
+              <Carousel.Caption   >
+                <h2 data-aos="fade-up"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out-cubic">Luxury <br></br> Residence here </h2>
+                <p data-aos="fade-right"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out-cubic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <Button variant="success">Read More</Button>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={background2}
+                alt="Third slide"
+              />
 
-           <Carousel className="">
-           <Carousel.Item>
               <Carousel.Caption>
-                  <h3 className="mb-4"
-                   data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500">First Title, 2nd Tilte</h3>
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure .</p>
-                  <Button variant="primary">Get Started</Button> 
-                </Carousel.Caption>
-                <div className="rightSection"> 
-                <Row >
-                    <Col className="stars" >
-                      <img className="star"    src={star}></img>
-                      <img className="star"  src={star}></img>
-                      <img className="star"  src={star}></img>
-                      <img className="star"  src={star}></img>
-                      <img className="star "   src={star}></img>  
-                      <h6 className="mt-1 stars-Title" >Sara Eid</h6>
-                    </Col>
-                    
-                  </Row>
-                  <div className="caruselBackground  ">
-                  <img style={{float:"right" ,paddingRight:"10%"}}
-                    className="d-block h-64 "
-                    src={woman}
-                    alt="First slide"
-                  />
-                  </div>
-                </div>
-              </Carousel.Item>
+              <h2 data-aos="zoom-in"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out-cubic">Luxury <br></br> Residence here </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <Button variant="success">Read More </Button>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={background3}
+                alt="Third slide"
+              />
 
-
-              <Carousel.Item>
               <Carousel.Caption>
-                  <h3 className="mb-4"
-                   data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500">First Title, 2nd Tilte</h3>
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure .</p>
-                  <Button variant="primary">Get Started</Button> 
-                </Carousel.Caption>
-                <div> 
-                <Row >
-                    <Col className="stars" >
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star "  src={star}></img>
-                    <h6 className="mt-1 stars-Title">Sara Eid</h6>
-                  
-                    </Col>
-                  </Row>
-                
-                  <div className="caruselBackground  ">
-                  <img style={{float:"right" ,paddingRight:"10%"}}
-                    className="d-block h-64 "
-                    src={man}
-                    alt="First slide"
-                  />
-                  </div>
-                </div>
-              </Carousel.Item>
-
-              <Carousel.Item>     
-              <Carousel.Caption>
-                  <h3 className="mb-4"
-                   data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500">First Title, 2nd Tilte</h3>
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure .</p>
-                  <Button variant="primary">Get Started</Button> 
-                </Carousel.Caption>
-                <div>
-                <Row >
-                    <Col className="stars" >
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star"  src={star}></img>
-                    <img classNam="star "   src={star}></img>
-                    <h6 className="mt-1 stars-Title">Sara Eid</h6>
-                  
-                    </Col>
-                  </Row>
-    
-                  <div className="caruselBackground  ">
-                  <img style={{float:"right" ,paddingRight:"10%"}}
-                    className="d-block h-64 "
-                    src={woman2}
-                    alt="First slide"
-                  />
-                  </div>
-                </div>
-              </Carousel.Item>
-            </Carousel>
-       
-        
+              <h2 data-aos="zoom-in"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out-cubic">Luxury <br></br> Residence here </h2>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <Button variant="success">Read More</Button>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+           
         </div>
     )
 }

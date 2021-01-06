@@ -1,108 +1,121 @@
-import React, { useEffect } from "react";
-import { Row , Col, Container ,Card ,Button ,Media,Image} from 'react-bootstrap';
+import React, { Component , Fragment } from 'react';
+import { Row , Col, Container ,Card } from 'react-bootstrap';
 // importimages
-import CardImg1 from '../assets/images/Rectangle 1499.png'
-import CardImg2 from '../assets/images/Rectangle 1499-1.png'
-import CardImg3 from '../assets/images/Rectangle 1499-2.png'
-import CardImg4 from '../assets/images/Rectangle 1499-3.png'
+import CardImg1 from '../assets/images/cardImg1.jpg'
+import CardImg2 from '../assets/images/cardImg2.jpg'
+import CardImg3 from '../assets/images/cardImg3.jpg'
+import CardImg4 from '../assets/images/cardImg4.jpg'
+import CardImg5 from '../assets/images/cardImg5.jpg'
+import CardImg6 from '../assets/images/cardImg6.jpg'
 import Icon1 from '../assets/images/Path 1902.svg'
-import woman from '../assets/images/pexels-photo-2748239.jpeg'
-import personImg1 from '../assets/images/pexels-photo-2748239.jpeg'
-import personImg2 from '../assets/images/5620d91b-d875-4c06-9a6f-93d4554196cc.jpg'
-import personImg3 from '../assets/images/a28cedf1-2688-49de-aa16-6e8759dd0d28.jpg'
-import personImg4 from '../assets/images/pexels-photo-4350178.jpeg'
 
-const section3 = () => {
+// import icons
+import { FaBath ,FaBed ,FaCarAlt,FaVectorSquare} from 'react-icons/fa';
 
 
-    const cardsInfo =[ 
-        {
+class Section3 extends Component {
+
+    state = {
+        loading: false,
+        data: [{
             img:CardImg1,
             title: 'This is a Project title',
-            text: 'in Design',
-            icon1:Icon1,
-            rating:4.2,
-            PersonName: 'Fatma Adel',
-            PersonImg :personImg1,
-            
+            country:"New York",
+            text: 'Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer,…',
+            icon1:Icon1,       
         },
         {
             img:CardImg2,
             title: 'This is a Project title',
-            text: 'in Design ',
+            text: 'Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer,… ',
+            country:"New York",
             icon1:Icon1,
-            rating:4.7,
-            PersonName: 'Hossam Khaled',
-            PersonImg :personImg2,
+           
            
         },
         {
             img:CardImg3,
             title: 'This is a Project title',
-            text: 'in Design ',
+            text: 'Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer,… ',
+            country:"New York",
             icon1:Icon1,
-            rating:4.8,
-            PersonName: 'Heba',
-            PersonImg :personImg1,
+            
         },
         {
             img:CardImg4,
             title: 'This is a Project title',
-            text: 'in Design ',
+            text: 'Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer,… ',
+            country:"New York",
             icon1:Icon1,
-            rating:4.5,
-            PersonName: 'Mahmoud Mostafa',
-            PersonImg :personImg3,
+            
         },
-        ]
+        {
+            img:CardImg5,
+            title: 'This is a Project title',
+            text: 'Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer,… ',
+            country:"New York",
+            icon1:Icon1,
+           
+        },
+        {
+            img:CardImg6,
+            title: 'This is a Project title',
+            text: 'Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer,… ',
+            country:"New York",
+            icon1:Icon1,
+        },
+    ],
+        headline: []
+    }
 
-
-    const renderCard = (card , index) =>{
-        return( 
-              <Col md={3} className="float-left my-5" style={{  alignItems: "center",
-                justifyContent: "center" }}>  
-                    <Card   key={index} data-aos="zoom-in"
-                            data-aos-delay="50"
-                            data-aos-duration="2000"
-                            data-aos-easing="ease-in-out-cubic">
-                        <Card.Img variant="top" src={card.img} />
-                        <Card.Body style={{height:"100px"}} >
-                            <Card.Title>{card.title}</Card.Title>
-                            <Card.Text >      
-                            {card.text}
-                            <div className="d-xl-table float-right pt-1">
-                            <img  style={{width:"15px"}} src={card.icon1}></img>
-                            <p className=" pl-3 pt-1" style={{position:"relative" ,top:"-24px", left:"5px" , color:"#FFBF00"}} >{card.rating}</p>
-                            </div>
-                            </Card.Text>
-                        </Card.Body>
-                        <Media>
-                            <Image 
-                                width={50}
-                                height={50}
-                                roundedCircle 
-                                className="mx-3 mb-3"
-                                src={card.PersonImg}
-                                alt="Generic placeholder"
-                            />
-                            <Media.Body>
-                                <h5 style={{fontSize:"15px"}}>{ card.PersonName}</h5>
-                                <p style={{fontSize:"10px"}}> Job Title </p>
-                            </Media.Body>
-                        </Media>
-                    </Card>
-                </Col>
-               
-               
-              
-               
+    render() {
+        return (
+            <div className="section3  ">
+                <Container>
+                    <div className="text-center my-5">
+                        <strong>Our Featured Properties For Sale and Rent</strong>
+                    <h1 className="CenterHeading">Properties For Sale & Rent</h1> 
+                    </div>
+                {this.state.loading
+                    ? "loading..."
+                    : <Row xs={1} sm={2} md={3} >
+                        {this.state.data.map((card, index) => {
+                            return (
+                                <Col>
+                                <Card  key={index} >
+                                         <div class="imgLeft"><h3>Sale</h3></div>
+                                         <Card.Img variant="top" src={card.img} />
+                                         <div class="imgRight"><h3>$11,412 </h3></div>
+                                        <Card.Body  >
+                                            <Card.Title>{card.title}</Card.Title>
+                                            <Card.Text > 
+                                              <strong>{card.country}</strong>
+                                              <p>{card.text}</p>
+                                            </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer className="text-muted">
+                                           
+                                              <Row>
+                                                   <Fragment class="leftIcons">
+                                                        <FaBed /><p>03</p>
+                                                        <FaBath/> <p>02</p>
+                                                        <FaCarAlt/><p>8</p>
+                                                   </Fragment>
+                                                   <span sm={1} class="rightIcons" >
+                                                       <FaVectorSquare /> <span>1400 square</span>
+                                                   </span>
+                                              </Row>
+                                          
+                                        </Card.Footer>
+                                    </Card>
+                                    </Col>
+                                    )
+                        })}
+                    </Row>
+                }
+                </Container>
+            </div>
         )
     }
-    return (
-        <Container className="section3 "  >
-           {cardsInfo.map(renderCard)}
-        </Container>
-    )
 }
-
-export default section3
+export default Section3;

@@ -12,32 +12,32 @@ const signIn = () => {
                 data-aos-duration="1500" >
             <Row >
                 <Col md={6} xs={12}>
-                    <img src={formImg}></img>
+                    <img src={formImg} alt="img"></img>
                 </Col>
                 <Col md={6} xs={12}>
                 <Form style={{height:"500px"}} >
                     <Form.Group  controlId="formBasicEmail">
-                        <img className="icon" src={icon1}></img>
+                        <img className="icon" src={icon1} alt="img"></img>
                         <Form.Control className="formElement" type="email" placeholder="Your Name " />
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
-                    <img className="icon" src={icon2}></img>
+                    <img className="icon" src={icon2} alt="img"></img>
                         <Form.Control className="formElement" type="password" placeholder="Your Password" />
                     </Form.Group>
                     <Form.Group controlId="formBasicConfirmPassword">
-                    <img className="icon" src={icon2}></img>
+                    <img className="icon" src={icon2} alt="img"></img>
                         <Form.Control className="formElement" type="password" placeholder="Confirm Password" />
                     </Form.Group>
                     <Row>
                         <Col>
-                            <Button className="formButton " variant="primary" type="submit" style={{width:"100%"}}>
+                            <Button className="formButton " variant="success" type="submit" style={{width:"100%"}}>
                             Create Account
                             </Button>
                         </Col>
                     
                          <Col>
-                            <Button className="formButton" variant="primary" type="submit" style={{width:"100%"}}>
+                            <Button className="formButton" variant="success" type="submit" style={{width:"100%"}}>
                                 Sign In
                             </Button>
                         </Col>

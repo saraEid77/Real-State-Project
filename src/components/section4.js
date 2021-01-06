@@ -1,27 +1,32 @@
-import React , {useState} from 'react'
-import { Tabs, Tab, Container , Row,Col ,Button} from 'react-bootstrap';
-import background from '../assets/images/component.png';
-import photo1 from '../assets/images/Untitled.png'
+import React, { Component  } from 'react';
+import { Row , Col, Container,Button } from 'react-bootstrap';
 
 
+class Section4 extends Component {
 
-
-const section4 = () => {
-
-
-    return (
-            <div className=" section4 pb-5">
-                        
-                    {/* <div className="mb-5" > */}
-                        <div className="text-white " style={{paddingTop:"80px",textAlign:"center"}}  >
-                            <h1 >How It Works</h1>
-                            <p>An overview of how work happens on Upwork.</p>
-                            <Button className="mb-5" variant="primary">Get Started</Button>
-                        </div> 
-                    {/* </div> */}
-      </div>
-   
-    )
+    
+    render() {
+        return (
+            <div className="section4 py-5 text-center">
+                <Container>
+                  <Row  xs={1} md={2}>
+                      <Col >
+                         <h2 >Find Best Place For Living</h2>
+                         <p>Spend vacations in best hotels and resorts find the great place of your
+                            choice using different searching options.</p>
+                         
+                      </Col>
+                      <Col className="mt-5">    
+                      <Button className="mt-3" variant="success">Get Started</Button>
+                      </Col>
+                  </Row>
+                
+                </Container>
+            </div>
+        )
+    }
 }
+export default Section4;
 
-export default section4
+
+
