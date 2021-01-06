@@ -19,7 +19,7 @@ function App() {
     <div className="App">
        {/* <Navbar /> */}
        <Navigation />
-          <Route exact path="/" component={home}></Route>
+          <Route exact path="/" component={Home}></Route>
           <Route path="/signIn" component={signIn}></Route>
           <Route path="/join" component={join}></Route>
        
